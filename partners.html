@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Become Partner</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{
+  font-family: 'Open Sans', sans-serif;
+  background:#f7f8fa;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Montserrat', sans-serif;
+}
+/* Navbar */
+.navbar{
+    padding: 15px 0;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* Buy Now Button */
+.btn-buy{
+    background: linear-gradient(45deg,#6f42c1,#4f46e5);
+    color:#fff;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+}
+
+.btn-buy:hover{
+    opacity:0.9;
+    color:#fff;
+}
+/*partner*/
+.partner-section{
+  padding:70px 0;
+}
+
+.breadcrumb a{
+  text-decoration:none;
+  color:#777;
+}
+
+.form-control{
+  border:none;
+  border-bottom:1px solid #ddd;
+  border-radius:0;
+  padding:12px 5px;
+}
+
+.form-control:focus{
+  box-shadow:none;
+  border-color:#3b82f6;
+}
+
+.signup-btn{
+  background:#6fa6c7;
+  border:none;
+  padding:14px;
+  font-weight:600;
+  color:#fff;
+  border-radius:10px;
+  width:100%;
+  margin-top:15px;
+}
+
+.signup-btn:hover{
+  background:#5a90af;
+}
+
+/* Right design */
+.circle-area{
+  position:relative;
+  text-align:center;
+}
+
+.main-circle{
+  width:220px;
+  height:220px;
+  background:#e6edf7;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:auto;
+  font-weight:600;
+  color:#2b4a7f;
+}
+
+.stats{
+  position:absolute;
+  width:100%;
+  top:0;
+  left:0;
+}
+
+.stat-box{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  position:absolute;
+}
+
+.icon{
+  width:55px;
+  height:55px;
+  background:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  font-size:22px;
+}
+
+/* Positions */
+.stat1{ top:-10px; right:0;}
+.stat2{ top:110px; right:-20px;}
+.stat3{ bottom:60px; right:10px;}
+.stat4{ bottom:-20px; left:20px;}
+
+@media(max-width:991px){
+  .circle-area{
+    margin-top:50px;
+  }
+}
+/*new footer*/
+.footer {
+            background:  #044d96;
+            border-top: 1px solid #e0e0e0;
+            padding: 2.5rem 2rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border: 2px solid  #044d96;;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#044d96;;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color:#044d96;;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .social-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-nav a {
+            color: #6c63ff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 4px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #6c63ff;
+            opacity: 0.8;
+        }
+
+        .footer-nav a:hover {
+            color: #6c63ff;
+        }
+
+        .copyright {
+            color: #888;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .footer-nav {
+                gap: 1.5rem;
+            }
+
+            .social-icons {
+                gap: 0.8rem;
+            }
+
+            .social-icon {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+
+</style>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <span class="text-primary fw-bold">REFINICS</span>
+      <small class="d-block text-muted" style="font-size:12px;">Consultatnts</small>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="servies.html">SERVICES</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">PARTNERS</a></li>
+        <li class="nav-item"><a class="nav-link" href="contect-us.html">CONTACT US</a></li>
+      </ul>
+
+      <a href="#" class="btn btn-buy">Buy Now</a>
+    </div>
+  </div>
+</nav>
+
+<body>
+
+<section class="partner-section">
+<div class="container">
+<div class="row align-items-center">
+
+<!-- LEFT -->
+<div class="col-lg-6">
+
+<nav class="breadcrumb mb-4">
+<a href="#">Home</a> &nbsp; > &nbsp;
+<a href="#" class="text-danger">Become Partner</a>
+</nav>
+
+<h1 class="mb-3">
+Start Your Loan Business with India's Leading Loan Distributor
+</h1>
+
+<p class="mb-4">
+Earn higher and instant payouts on every loan case you disburse.
+</p>
+
+<form>
+
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Full Name*">
+</div>
+
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Mobile Number*">
+</div>
+
+<div class="mb-3">
+<input type="email" class="form-control" placeholder="Email*">
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">
+I agree to the <a href="#">terms & conditions</a> and 
+<a href="#">privacy policy</a>.
+</label>
+</div>
+
+<button class="signup-btn">SIGN UP / SIGN IN</button>
+
+</form>
+
+</div>
+
+<!-- RIGHT -->
+<div class="col-lg-6">
+<div class="circle-area">
+
+<div class="main-circle">
+<div>
+<h5>Grow Your<br>Income!</h5>
+<span class="text-danger">Join Us as a DSA Partner</span>
+</div>
+</div>
+
+<div class="stats">
+
+<div class="stat-box stat1">
+<div class="icon text-danger">🏆</div>
+<div>
+<strong>25+</strong><br>
+Years of Trust
+</div>
+</div>
+
+<div class="stat-box stat2">
+<div class="icon text-primary">🤝</div>
+<div>
+<strong>275+</strong><br>
+Lending Partners
+</div>
+</div>
+
+<div class="stat-box stat3">
+<div class="icon text-danger">📍</div>
+<div>
+<strong>4000+</strong><br>
+Cities Covered
+</div>
+</div>
+
+<div class="stat-box stat4">
+<div class="icon text-primary">💰</div>
+<div>
+<strong>₹1.4 Lakh Cr+</strong><br>
+Loans Disbursed
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<style>
+.dsa-section{
+  background:#f7f8fa;
+  padding:70px 0;
+  font-family:'Open Sans', sans-serif;
+}
+
+.section-title{
+  font-family:'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:38px;
+  color:#1d2a3b;
+}
+
+.section-desc{
+  max-width:900px;
+  color:#5f6b7a;
+  font-size:17px;
+  margin-top:10px;
+}
+
+.dsa-card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  height:100%;
+  transition:0.3s;
+}
+
+.dsa-card h5{
+  font-family:'Montserrat', sans-serif;
+  font-weight:600;
+  color:#2d4e8b;
+  margin-bottom:10px;
+}
+
+.dsa-card p{
+  color:#5f6b7a;
+  font-size:15px;
+}
+
+.dsa-card:hover{
+  transform:translateY(-5px);
+}
+
+.bottom-text{
+  color:#5f6b7a;
+  font-size:16px;
+}
+</style>
+<section class="dsa-section">
+  <div class="container">
+
+    <h2 class="section-title">Who is a DSA?</h2>
+
+    <p class="section-desc">
+      A Direct Selling Agent (DSA) is an efficient link that channels communication between 
+      financial institutions like banks and NBFCs. Loan DSA Agents are assigned key duties, including:
+    </p>
+
+    <div class="row align-items-center mt-5">
+
+      <!-- Left Image -->
+      <div class="col-lg-5 mb-4">
+        <img src="https://www.techfunnel.com/wp-content/uploads/2021/07/benefits_of_business_loans.png" class="img-fluid">
+      </div>
+
+      <!-- Right Cards -->
+      <div class="col-lg-7">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <div class="dsa-card">
+              <h5>Identifying Potential Customers</h5>
+              <p>
+                Searching and connecting with the individuals who need financial services.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="dsa-card">
+              <h5>Guiding Borrowers</h5>
+              <p>
+                Educating customers on financial products and how to apply for a loan.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="dsa-card">
+              <h5>Ensuring Documentation</h5>
+              <p>
+                Ensuring the accuracy and availability of all necessary paperwork.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="dsa-card">
+              <h5>Closing Deals</h5>
+              <p>
+                Connect borrowers with lenders and finalize transactions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <p class="bottom-text mt-5">
+      As a DSA, you can offer an extensive range of financial products such as home loans, 
+      business loans, personal loans, loans against property, car loans, education loans, 
+      solar loans, machinery loans, gold loans, credit cards, and insurance products. 
+      You can earn payouts based on the loan amount disbursed.
+    </p>
+
+  </div>
+</section>
+<style>
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Partner Section */
+.partner-section{
+  padding:70px 0;
+  background:#fff;
+}
+
+.section-title{
+  font-size:34px;
+  font-weight:700;
+}
+
+.section-subtitle{
+  max-width:900px;
+  margin:auto;
+  color:#6c757d;
+}
+
+/* Cards */
+.partner-card{
+  text-align:center;
+  padding:30px 15px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+.partner-card:hover{
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transform:translateY(-5px);
+}
+
+.partner-card.active{
+  border:1px solid #0d6efd;
+  box-shadow:0 10px 25px rgba(13,110,253,0.15);
+}
+
+.partner-icon{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.about-box{
+  background:#eef2f7;
+  padding:30px;
+  border-radius:10px;
+  margin-top:50px;
+}
+</style>
+<section class="partner-section">
+<div class="container">
+
+<div class="text-center mb-5">
+<h1 class="section-title">Who can Become a Partner with Ruloans?</h1>
+<p class="section-subtitle">
+Enhance your professional status. Fire up your entrepreneurial instincts! 
+Any person with interpersonal skills and a passion for success can be a part of Team Ruloans as a Loan DSA Partner.
+</p>
+</div>
+
+<div class="row g-4 justify-content-center">
+
+<div class="col-lg-2 col-md-4 col-6">
+<div class="partner-card active">
+<div class="partner-icon">📑</div>
+Loan Agent
+</div>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+<div class="partner-card">
+<div class="partner-icon">🏦</div>
+Ex-Banker
+</div>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+<div class="partner-card">
+<div class="partner-icon">📊</div>
+Financial Analyst
+</div>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+<div class="partner-card">
+<div class="partner-icon">💰</div>
+Mutual Fund Agent
+</div>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+<div class="partner-card">
+<div class="partner-icon">💼</div>
+Chartered Accountant
+</div>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+<div class="partner-card">
+<div class="partner-icon">👷</div>
+Builder
+</div>
+</div>
+
+</div>
+
+<div class="about-box">
+<h2>About Loan DSA Agent</h2>
+<p>
+You're a Loan DSA Agent who is knowledgeable about all types of loans offered by the financial institutions you represent.
+Get your Ruloans DSA Partner Advantage now and help customers finance their dreams!
+</p>
+</div>
+
+</div>
+<style>
+.training-section{
+  padding:80px 0;
+  background:#f5f7fb;
+}
+
+.training-title{
+  font-size:36px;
+  font-weight:700;
+  font-family:'Montserrat',sans-serif;
+}
+
+.training-subtitle{
+  color:#6c757d;
+  margin-bottom:40px;
+}
+
+/* Cards */
+.training-card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.05);
+  height:100%;
+  transition:0.3s;
+}
+
+.training-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.training-card h5{
+  color:#2f63b5;
+  font-weight:600;
+  font-family:'Montserrat',sans-serif;
+  margin-bottom:10px;
+}
+
+.training-card p{
+  color:#444;
+  margin:0;
+}
+
+/* Image */
+.training-img{
+  max-width:100%;
+}
+</style>
+<section class="training-section">
+<div class="container">
+
+<h2 class="training-title">What Kind of Training Is Required to Become a DSA?</h2>
+<p class="training-subtitle">
+Once selected, a DSA loan agent undergoes comprehensive training covering:
+</p>
+
+<div class="row align-items-center">
+
+<!-- LEFT CARDS -->
+<div class="col-lg-7">
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="training-card">
+<h5>Loan Types</h5>
+<p>Understanding different loans, interest rates, terms, eligibility criteria, and repayment structures.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="training-card">
+<h5>Communication Skills</h5>
+<p>Enhancing communication for excellent sales performance.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="training-card">
+<h5>Customer Rapport</h5>
+<p>Building trust with potential borrowers.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="training-card">
+<h5>Customer Service</h5>
+<p>Fostering strong customer relationships.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="training-card">
+<h5>Regulations Knowledge</h5>
+<p>Learning RBI regulations and institutional guidelines.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- RIGHT IMAGE -->
+<div class="col-lg-5 text-center mt-4 mt-lg-0">
+<img src="https://alpha-tnas.com/wp-content/uploads/2021/09/blog2-new.jpg" alt="Training" class="training-img">
+</div>
+
+</div>
+</div>
+<style>
+
+</style>
+</section>
+</section>
+<style>
+.process-section{
+  padding:80px 0;
+  background:#f5f7fb;
+}
+
+.process-title{
+  font-size:36px;
+  font-weight:700;
+  font-family:'Montserrat',sans-serif;
+}
+
+.process-subtitle{
+  color:#6c757d;
+  margin-bottom:50px;
+  max-width:900px;
+}
+
+/* Cards */
+.process-card{
+  background:#fff;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+  text-align:center;
+  position:relative;
+  transition:0.3s;
+}
+
+.process-card:hover{
+  transform:translateY(-6px);
+}
+
+.process-card h5{
+  color:#2f63b5;
+  font-family:'Montserrat',sans-serif;
+  font-weight:600;
+  margin-bottom:12px;
+}
+
+/* Numbers */
+.process-number{
+  position:absolute;
+  font-size:90px;
+  font-weight:700;
+  color:#e3e8ef;
+  top:-40px;
+  left:-20px;
+  z-index:-1;
+}
+
+/* Layout spacing */
+.process-step{
+  margin-bottom:40px;
+}
+
+/* Responsive */
+@media(max-width:991px){
+  .process-number{
+    font-size:70px;
+  }
+}
+
+</style>
+<section class="process-section">
+<div class="container">
+
+<h2 class="process-title">Process Of Ruloans DSA Registration</h2>
+<p class="process-subtitle">
+Registering to partner with Ruloans makes for a good start to a successful DSA career. 
+This guide will walk you each step through the Online Loan DSA Registration as you begin and grow your business.
+</p>
+
+<div class="row">
+
+<!-- Step 1 -->
+<div class="col-lg-3 col-md-6 process-step">
+<div class="process-card">
+<div class="process-number">1</div>
+<h5>Apply</h5>
+<p>Click on "Apply Now", fill in the Loan DSA Partner Registration form, and upload documents.</p>
+</div>
+</div>
+
+<!-- Step 2 -->
+<div class="col-lg-3 col-md-6 process-step">
+<div class="process-card">
+<div class="process-number">2</div>
+<h5>Expect a Call</h5>
+<p>The Ruloans support team will call you to guide, and co-ordinate a meeting with you.</p>
+</div>
+</div>
+
+<!-- Step 3 -->
+<div class="col-lg-3 col-md-6 process-step">
+<div class="process-card">
+<div class="process-number">3</div>
+<h5>Meet</h5>
+<p>At the meeting, a Ruloans Manager will explain all you need to know including the process to follow while generating leads.</p>
+</div>
+</div>
+
+<!-- Step 4 -->
+<div class="col-lg-3 col-md-6 process-step">
+<div class="process-card">
+<div class="process-number">4</div>
+<h5>Sign Agreement</h5>
+<p>After signing the DSA agreement, you will become a Ruloans DSA Partner and can start earning instantly.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="footer-nav">
+                 <a href="index.html">Home</a>
+                <a href="aboutus.html">AboutUs</a>
+                <a href="servies.html">Services</a>
+                <a href="partners.html">Partners</a>
+                <a href="contect-us.html">Contact</a>
+               
+            </nav>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                © 2026 How to Web Dev | All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
